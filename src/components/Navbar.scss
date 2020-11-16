@@ -1,0 +1,30 @@
+.navbar {
+    position: fixed;
+    top: 20px;
+    width: 85%;
+    max-width: 800px;
+    box-shadow: 0 0 15px 3px #00000010;
+    border-radius: 15px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+
+    .nav-links {
+        display: flex;
+        border: thin solid black;
+        align-items: center;
+        list-style-type: none;
+        justify-content: space-between;
+
+        @media only screen and (max-width: 768px) {
+            display: none;
+        }
+    }
+
+    .control-panel {
+        display: flex;
+        align-items: center;
+    }
+}

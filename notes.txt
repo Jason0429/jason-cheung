@@ -1,0 +1,2 @@
+- Floating button for direct email
+- Resume link
