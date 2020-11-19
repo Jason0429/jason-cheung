@@ -5,4 +5,4 @@ function ExperienceCard() {
 	return <Card></Card>;
 }
 
-export default ExperienceCards;
+export default ExperienceCard;
