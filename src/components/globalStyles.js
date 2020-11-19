@@ -6,6 +6,12 @@ export const GlobalStyles = createGlobalStyle`
     color: ${({ theme }) => theme.text};
     transition: all 0.1s ease-in;
 
+    .toggle-mode {
+        background: ${({ theme }) => theme.body};
+        color: ${({ theme }) => theme.text};
+        transition: all 0.1s ease-in;
+    }
+
     .box-shadow {
         box-shadow: ${({ theme }) => theme.boxShadow};
     }
@@ -14,12 +20,26 @@ export const GlobalStyles = createGlobalStyle`
         fill: ${({ theme }) => theme.fill};
     }
 
+    .media-icons {
+        padding: 8px;
+        border-radius: 100%;
+    }
+
     .my-btn {
-        color: ${({theme}) => theme.text};
+        color: ${({ theme }) => theme.text};
 
         &:hover {
-            background: ${({theme}) => theme.btnHoverBackground}
+            background: ${({ theme }) => theme.btnHoverBackground}
         }
     }
+
+    a {
+        text-decoration: none;
+    }
+
+    .z-index {
+        z-index: 1001;
+        pointer-events: all;
+    }
   }
-  `
+  `;

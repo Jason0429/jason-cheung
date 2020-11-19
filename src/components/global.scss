@@ -11,3 +11,13 @@
 button:focus {
     outline: none;
 }
+
+.section {
+    min-height: 100vh;
+}
+
+.align-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
