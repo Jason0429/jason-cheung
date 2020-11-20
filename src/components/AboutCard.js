@@ -16,7 +16,7 @@ import LinkedInIcon from "@material-ui/icons/LinkedIn";
 
 function AboutCard() {
 	return (
-		<Card className="box-shadow">
+		<Card className="box-shadow toggle-mode">
 			<Wrapper>
 				<Title>Hi, Nice to Meet You!</Title>
 				<SubTitle>I'm Jason</SubTitle>

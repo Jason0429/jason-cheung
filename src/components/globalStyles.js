@@ -41,5 +41,13 @@ export const GlobalStyles = createGlobalStyle`
         z-index: 1001;
         pointer-events: all;
     }
+
+    .wave-background {
+        position: fixed;
+        height: 30%;
+        width: 100%;
+        bottom: 0;
+        z-index: -2 !important;
+    }
   }
   `;

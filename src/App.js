@@ -11,6 +11,7 @@ import { Fade } from "react-awesome-reveal";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import AboutCard from "./components/AboutCard";
 import ExperienceCard from "./components/ExperienceCard";
+import Wave from "react-wavify";
 
 function App() {
 	const [theme, themeToggler] = useDarkMode();
@@ -19,13 +20,6 @@ function App() {
 
 	const menuToggler = () => {
 		setMenu((prevValue) => !prevValue);
-	};
-
-	var myCard = {
-		title: "Hi, Nice to Meet You!",
-		img:
-			"https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/118155121_3346396542251593_3278468722248117115_n.jpg?_nc_cat=104&ccb=2&_nc_sid=09cbfe&_nc_ohc=Z2BGhMb-VSQAX9Y9e7g&_nc_ht=scontent-lga3-1.xx&oh=9884d302a39af0fa6a45802636ed13d8&oe=5FD55A77",
-		name: "I'm Jason"
 	};
 
 	var navLinks = [
@@ -52,6 +46,17 @@ function App() {
 			<>
 				<GlobalStyles />
 				<div className="App">
+					<Wave
+						className="wave-background"
+						fill={theme == "light" ? "#363537" : "#FAFAFA"}
+						paused={false}
+						options={{
+							height: 20,
+							amplitude: 50,
+							speed: 0.2,
+							points: 5
+						}}
+					/>
 					<Navbar
 						themeToggler={themeToggler}
 						isMenu={isMenu}
